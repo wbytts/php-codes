@@ -28,7 +28,6 @@ echo $a.$b;
 
 /**
  * 可变变量：把一个变量的值作为另一个变量来使用
- * 常量：值不变的量
  */
 echo "<br />";
 $name = 'tom';
@@ -37,5 +36,18 @@ echo $name;
 echo $tom;
 echo $$name; // 将 $name 的值，作为变量名来使用，引用新的变量
 
+
+/**
+ * 常量：值不变的量
+ */
+echo "<br />";
+define('const_var', 'ttttt');
+echo const_var;
+
+/**
+ * var_dump(xxx)  输出变量信息
+ */
+echo "<br>";
+var_dump($name); // 会直接输出，不需要再用 echo
 
 
